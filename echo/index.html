@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="msapplication-TileColor" content="#f5c211">
+    <meta name="theme-color" content="#f5c211">
+
+    <title>Echo</title>
+    <meta name="description" content="Ping websites">
+
+    <meta property="og:title" content="Echo">
+    <meta property="og:description" content="Ping websites">
+    <meta property="og:url" content="https://lo2dev.github.io/portal/echo">
+    <meta property="og:site_name" content="lo2dev.github.io">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://tuba.geopjr.dev/assets/favicons/logo.png"> -->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <a class="header-link" href="https://lo2dev.github.io">A Lovely Project</a>
+        <p>⸱</p>
+        <a class="header-link" href="https://github.com/lo2dev/echo">Source</a>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="section-content">
+                <div class="app-card-parent">
+                    <div class="app-card">
+                        <img draggable="false" class="app-logo" src="./img/logo.svg"
+                            alt="Logo of Echo - A device with a screen of signal waves in the style of GNOME icons" />
+                        <div>
+                            <h1>Echo</h1>
+                            <h2>Ping websites</h2>
+
+
+                        </div>
+                    </div>
+
+                    <a href="https://flathub.org/apps/io.github.lo2dev.Echo" rel="noreferrer noopener"
+                        target="_blank"><img loading="lazy" draggable="false" width='240' alt='Get it on Flathub'
+                            src='https://flathub.org/api/badge?svg&locale=en' /></a>
+
+                </div>
+                <picture>
+                    <source srcset="./img/ss1-light.png" media="(prefers-color-scheme: light)">
+                    <img draggable="false"
+                        alt="Screenshot of the Echo app. The current view is the main one before doing the ping. It features the address bar and ping options such as ping count, interval, timeout, source and family. At the bottom there's the ping button"
+                        class="screenshot" src="./img/ss1-dark.png">
+                </picture>
+            </div>
+        </section>
+
+        <section id="issues">
+            <div class="alt-section-content">
+                <h1 class="section-title">
+                    <a href="#issues">Issues</a>
+                </h1>
+                <div class="issue">
+                    <h2>Insufficient permissions</h2>
+                    <p class="section-title">If you encounter this issue, it probably means you lack the required
+                        permissons to ping on your system. As a
+                        workaround, you can run these terminal commands to get Echo working:</p>
+                    <pre>
+<code>echo 'net.ipv4.ping_group_range = 0 2147483647' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p</code></pre>
+                </div>
+
+                <div class="submit-issues">
+                    <h2>Having other issues?</h2>
+                    <a class="submit-issues-link" href="https://github.com/lo2dev/echo/issues">Submit An Issue</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
